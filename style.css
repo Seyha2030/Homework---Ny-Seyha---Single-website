@@ -338,6 +338,10 @@ h1 {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.canteen-left table:hover{
+    box-shadow: 2px rgb(199, 192, 192);
+}
+
 
 .canteen-left th,
 .canteen-left td {
@@ -345,6 +349,9 @@ h1 {
     padding: 10px;
     text-align: center;
     width: 245px;
+}
+.canteen-left td:hover{
+    border: 1px solid aqua;
 }
 
 .canteen-left th {
@@ -364,6 +371,11 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+.canteen-right img:hover{
+    box-shadow: 4px 4px 4px 4px rgb(194, 186, 186);
+    transition: 0.3s;
+}
+
 
 /* Contact */
 /* Reset and base styles */
@@ -574,5 +586,148 @@ form button:hover {
         flex-direction: column;
         align-items: center;
         padding: 50px 20px;
+    }
+    .footer-card:hover {
+    border-right: none;
+    border-bottom: 1px solid white;
+}
+}
+/* --- Responsive for phones (480px and below) --- */
+@media (max-width: 480px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav-logo {
+        width: 90px;
+    }
+
+    .contain-bottom {
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .contain-bottom h1 {
+        font-size: 24px;
+    }
+
+    .contain-bottom p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .contain-center {
+        padding: 20px;
+    }
+
+    .contain-center h1 {
+        font-size: 22px;
+    }
+
+    .contain-center h2 {
+        font-size: 18px;
+    }
+
+    .canteen-contain {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .canteen-left table {
+        font-size: 12px;
+    }
+
+    .canteen-right img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sport-card img {
+        height: 150px;
+    }
+
+    .aerobic-photo {
+        width: 100%;
+        height: auto;
+    }
+
+    iframe {
+        width: 100% !important;
+        height: 250px !important;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+/* --- Responsive for large desktop (1200px ↑) --- */
+@media (min-width: 1200px) {
+    .contain-bottom {
+        width: 40%;
+        padding: 100px;
+    }
+
+    .contain-bottom h1 {
+        font-size: 56px;
+    }
+
+    .contain-center {
+        padding: 100px 200px;
+    }
+
+    .canteen-right img {
+        width: 400px;
+        height: 250px;
+    }
+
+    .sport-card img {
+        height: 220px;
+    }
+
+    .aerobic-photo {
+        height: 500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contain-bottom {
+        width: 40%;
+        padding: 100px;
+    }
+
+    .contain-bottom h1 {
+        font-size: 56px;
+    }
+
+    .contain-center {
+        padding: 100px 200px;
+    }
+
+    .canteen-right img {
+        width: 355px;
+        height: 250px;
+    }
+
+    .sport-card img {
+        height: 220px;
+    }
+
+    .aerobic-photo {
+        height: 500px;
     }
 }
