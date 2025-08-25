@@ -676,31 +676,4 @@ form button:hover {
 }
 
 /* --- Responsive for large desktop (1200px ↑) --- */
-@media (min-width: 1200px) {
-    .contain-bottom {
-        width: 40%;
-        padding: 100px;
-    }
-
-    .contain-bottom h1 {
-        font-size: 56px;
-    }
-
-    .contain-center {
-        padding: 100px 200px;
-    }
-
-    .canteen-right img {
-        width: 355px;
-        height: 250px;
-    }
-
-    .sport-card img {
-        height: 220px;
-    }
-
-    .aerobic-photo {
-        height: 500px;
-    }
-}
 
