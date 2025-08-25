@@ -153,8 +153,8 @@ footer {
     background-color: black;
     padding-left: 8%;
     border-radius: 8px;
-    padding-bottom: 200px;
-    padding-top: 100px;
+    padding-bottom: 80px;
+    padding-top: 40px;
 }
 
 .footer-card {
@@ -660,6 +660,7 @@ form button:hover {
         height: 150px;
     }
 
+
     .aerobic-photo {
         width: 100%;
         height: auto;
@@ -676,4 +677,31 @@ form button:hover {
 }
 
 /* --- Responsive for large desktop (1200px ↑) --- */
+@media (min-width: 1200px) {
+    .contain-bottom {
+        width: 40%;
+        padding: 100px;
+    }
+
+    .contain-bottom h1 {
+        font-size: 56px;
+    }
+
+    .contain-center {
+        padding: 100px 200px;
+    }
+
+    .canteen-right img {
+        width: 355px;
+        height: 250px;
+    }
+
+    .sport-card img {
+        height: 220px;
+    }
+
+    .aerobic-photo {
+        height: 500px;
+    }
+}
 
