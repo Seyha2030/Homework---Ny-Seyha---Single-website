@@ -8,6 +8,11 @@
 
 body {
     background: #f7f7f7;
+
+}
+
+main {
+    padding: 0 5%;
 }
 
 /* Container for hero section */
@@ -200,7 +205,7 @@ footer {
 
 
 .pn-value {
-    max-width: 1520px;
+    max-width: 100%;
     margin: auto;
     padding: 40px 20px;
     background: #f7f7f7;
@@ -262,10 +267,10 @@ footer {
 
 
 .sport-container {
-    max-width: 1465px;
+    max-width: 100%;
     margin: auto;
     background: #f7f7f7;
-    margin-top: 100px;
+    margin-top: 8px;
 }
 
 .sport-container h1 {
@@ -325,10 +330,11 @@ h1 {
 /* Container for canteen section */
 .canteen-contain {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 30px;
     flex-wrap: wrap;
     background: #f7f7f7;
+    width: 100%;
 }
 
 /* Table styles */
@@ -338,7 +344,8 @@ h1 {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.canteen-left table:hover{
+
+.canteen-left table:hover {
     box-shadow: 2px rgb(199, 192, 192);
 }
 
@@ -348,14 +355,25 @@ h1 {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
-    width: 245px;
+    width: 300px;
 }
-.canteen-left td:hover{
+
+.canteen-left td:hover {
     border: 1px solid aqua;
 }
 
 .canteen-left th {
     background-color: #f0f0f0;
+}
+
+.food-card {
+    background: rgb(233, 228, 220);
+    border-radius: 16px;
+    width: 25%;
+}
+
+.food-card h3 {
+    margin: 16px 32px;
 }
 
 /* Image section */
@@ -366,12 +384,13 @@ h1 {
 }
 
 .canteen-right img {
-    width: 355px;
+    width: 100%;
     height: 200px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.canteen-right img:hover{
+
+.food-card:hover {
     box-shadow: 4px 4px 4px 4px rgb(194, 186, 186);
     transition: 0.3s;
 }
@@ -381,7 +400,7 @@ h1 {
 /* Reset and base styles */
 
 .container {
-    max-width: 1340px;
+    max-width: 100%;
     margin: auto;
     padding: 20px;
     justify-content: space-between;
@@ -420,7 +439,7 @@ h1 {
 
 #contact {
     background: #f7f7f7;
-    padding: 40px 20px;
+    width: 100%;
 }
 
 
@@ -467,241 +486,271 @@ form button:hover {
 }
 
 /* Aerobic */
-.contain-aerobic {
-    display: flex;
-    flex-direction: column;
-    background: #f7f7f7;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin: auto;
-    margin-top: 100px;
-}
+/* Aerobic Section */
+
+
+
 
 .img-aerobic {
-    gap: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 30px 0;
 }
 
-.aerobic-photo {
+/* Aerobic Card */
+.aerobic-card {
+    height: 450px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    height: 400px;
-    width: 32%;
+/* Hover effect */
+.aerobic-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Image style */
+.aerobic-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* Text below image */
+.aerobic-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.aerobic-card p {
+    margin: 8px;
+}
+
+#contact {
+    padding: 0;
+}
+
+#map iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    background: #f0f2f5;
+    color: #333;
+}
+
+#contact {
+    padding: 50px 20px;
+    background: #f7f7f7;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color:black;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-left,
+.contact-right {
+    flex: 1 1 45%;
+    background: white;
+    padding: 25px;
     border-radius: 16px;
-    border: 24px solid white;
-    margin: 4px;
-    transform: 0.5s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
 }
 
-.aerobic-photo:hover {
-    transform: translate(+10px);
-    border: 1px solid aqua;
+.contact-left h4 {
+    margin: 0;
+    color: #007BFF;
+    font-size: 1.1rem;
 }
 
-#map {
-    padding-left: 10%;
-    padding-right: 10%;
+.contact-email {
+    margin-bottom: 20px;
 }
 
-/* --- Responsive for tablets (768px and below) --- */
+.contact-email input {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contact-left p {
+    line-height: 1.6;
+    color: #555;
+    margin-top: 20px;
+}
+
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #444;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #007BFF;
+}
+
+form button {
+    width: 100%;
+    padding: 14px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* ========================
+   Responsive Design
+   ======================== */
+
+/* Tablet (iPad, < 1024px) */
+@media (max-width: 1024px) {
+  .nav-container {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .contain-bottom {
+    width: 80%;
+    padding: 40px 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-left, .contact-right {
+    width: 100%;
+  }
+
+  .canteen-right {
+    flex-wrap: wrap;
+  }
+
+  .food-card {
+    width: 45%;
+  }
+}
+
+/* Phone (Mobile, < 768px) */
 @media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
-    }
+  .nav-menu {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
 
-    .nav-menu {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-    }
+  .contain-bottom h1 {
+    font-size: 28px;
+  }
 
-    .main-logo {
-        margin-bottom: 10px;
-    }
+  .contain-bottom p {
+    font-size: 14px;
+  }
 
-    .contain-bottom,
-    .contain-center {
-        padding: 30px 20px;
-        width: 100%;
-    }
+  .pn-card {
+    padding: 20px;
+  }
 
-    .contain-bottom h1 {
-        font-size: 36px;
-    }
+  .sport-card img {
+    height: 150px;
+  }
 
-    .contain-center h1 {
-        font-size: 28px;
-    }
+  .food-card {
+    width: 100%;
+  }
 
-    .pn-card {
-        padding: 20px;
-    }
+  .img-aerobic {
+    grid-template-columns: 1fr;
+  }
 
-    .canteen-contain {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .canteen-left table,
-    .canteen-right img {
-        width: 100%;
-    }
-
-    .canteen-right {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .sport-card img {
-        height: 200px;
-    }
-
-    .container {
-        flex-direction: column;
-        gap: 40px;
-        padding: 10px;
-    }
-
-    .contact-left,
-    .contact-right {
-        width: 100%;
-    }
-
-    #input-left {
-        width: 90%;
-    }
-
-    .aerobic-photo {
-        width: 100%;
-        height: auto;
-    }
-
-    iframe {
-        width: 100% !important;
-        height: 400px !important;
-    }
-
-    .contain-footer {
-        flex-direction: column;
-        align-items: center;
-        padding: 50px 20px;
-    }
-    .footer-card:hover {
-    border-right: none;
-    border-bottom: 1px solid white;
+  #map iframe {
+    height: 300px;
+  }
 }
-}
-/* --- Responsive for phones (480px and below) --- */
+
+/* Small Phone (< 480px) */
 @media (max-width: 480px) {
-    .nav-container {
-        flex-direction: column;
-        padding: 10px;
-    }
+  .nav-container {
+    padding: 10px;
+  }
 
-    .nav-menu {
-        flex-direction: column;
-        gap: 8px;
-        align-items: flex-start;
-        width: 100%;
-    }
+  .nav-logo {
+    width: 90px;
+  }
 
-    .nav-logo {
-        width: 90px;
-    }
+  .contain-bottom h1 {
+    font-size: 22px;
+  }
 
-    .contain-bottom {
-        padding: 20px;
-        text-align: center;
-        width: 100%;
-    }
+  .contain-bottom p {
+    font-size: 13px;
+  }
 
-    .contain-bottom h1 {
-        font-size: 24px;
-    }
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 
-    .contain-bottom p {
-        font-size: 14px;
-        line-height: 1.4;
-    }
+  .sport-card h2 {
+    font-size: 18px;
+  }
 
-    button {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-
-    .contain-center {
-        padding: 20px;
-    }
-
-    .contain-center h1 {
-        font-size: 22px;
-    }
-
-    .contain-center h2 {
-        font-size: 18px;
-    }
-
-    .canteen-contain {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .canteen-left table {
-        font-size: 12px;
-    }
-
-    .canteen-right img {
-        width: 100%;
-        height: auto;
-    }
-
-    .sport-card img {
-        height: 150px;
-    }
-
-
-    .aerobic-photo {
-        width: 100%;
-        height: auto;
-    }
-
-    iframe {
-        width: 100% !important;
-        height: 250px !important;
-    }
-
-    footer {
-        font-size: 14px;
-    }
+  .sport-card h3 {
+    font-size: 14px;
+  }
 }
-
-/* --- Responsive for large desktop (1200px ↑) --- */
-@media (min-width: 1200px) {
-    .contain-bottom {
-        width: 40%;
-        padding: 100px;
-    }
-
-    .contain-bottom h1 {
-        font-size: 56px;
-    }
-
-    .contain-center {
-        padding: 100px 200px;
-    }
-
-    .canteen-right img {
-        width: 355px;
-        height: 250px;
-    }
-
-    .sport-card img {
-        height: 220px;
-    }
-
-    .aerobic-photo {
-        height: 500px;
-    }
-}
-
